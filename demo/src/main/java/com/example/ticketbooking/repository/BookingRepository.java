@@ -15,4 +15,7 @@ public interface BookingRepository extends JpaRepository<Booking, Long> {
 
     @Query("SELECT b FROM Booking b JOIN FETCH b.event WHERE b.id = :id")
     Optional<Booking> findByIdWithEvent(@Param("id") Long id);
+
+    @Query("SELECT b FROM Booking b JOIN FETCH b.event WHERE b.event.id = :eventId")
+    List<Booking> findByEventId(@Param("eventId") Long eventId);
 }

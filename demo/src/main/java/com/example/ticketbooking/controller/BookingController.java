@@ -41,6 +41,11 @@ public class BookingController {
         return bookingRepository.findAllWithEvent();
     }
 
+    @GetMapping("/event/{eventId}")
+    public List<Booking> getBookingsByEventId(@PathVariable Long eventId) {
+        return bookingRepository.findByEventId(eventId);
+    }
+
     @GetMapping("/{id}")
     public Booking getBookingById(@PathVariable Long id) {
         return bookingRepository.findByIdWithEvent(id).orElse(null);

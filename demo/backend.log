@@ -1,0 +1,67 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:ticket-booking >---------------------
+[INFO] Building ticket-booking 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.7.5:run (default-cli) > test-compile @ ticket-booking >>>
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ticket-booking ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ ticket-booking ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to C:\Users\smdbhlp08\Desktop\EventBooking\demo\target\classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ticket-booking ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\smdbhlp08\Desktop\EventBooking\demo\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ ticket-booking ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\smdbhlp08\Desktop\EventBooking\demo\target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:2.7.5:run (default-cli) < test-compile @ ticket-booking <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.7.5:run (default-cli) @ ticket-booking ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.5)
+
+2025-10-29 15:09:04.314  INFO 10892 --- [           main] c.e.t.TicketBookingApplication           : Starting TicketBookingApplication using Java 17.0.12 on SMDBHLP08 with PID 10892 (C:\Users\smdbhlp08\Desktop\EventBooking\demo\target\classes started by smdbhlp08 in C:\Users\smdbhlp08\Desktop\EventBooking\demo)
+2025-10-29 15:09:04.316  INFO 10892 --- [           main] c.e.t.TicketBookingApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-10-29 15:09:04.823  INFO 10892 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-29 15:09:04.869  INFO 10892 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2025-10-29 15:09:05.446  INFO 10892 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-29 15:09:05.454  INFO 10892 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-29 15:09:05.454  INFO 10892 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-10-29 15:09:05.550  INFO 10892 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-29 15:09:05.550  INFO 10892 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1189 ms
+2025-10-29 15:09:05.730  INFO 10892 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-29 15:09:05.786  INFO 10892 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2025-10-29 15:09:05.942  INFO 10892 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-29 15:09:06.010  INFO 10892 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2025-10-29 15:09:06.044  INFO 10892 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-29 15:09:06.178  INFO 10892 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-29 15:09:06.180  INFO 10892 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.sqlite.hibernate.dialect.SQLiteDialect
+2025-10-29 15:09:06.985  INFO 10892 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-29 15:09:06.998  INFO 10892 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29 15:09:07.688  WARN 10892 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-29 15:09:08.189  INFO 10892 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-29 15:09:08.212  INFO 10892 --- [           main] c.e.t.TicketBookingApplication           : Started TicketBookingApplication in 4.278 seconds (JVM running for 4.624)
+2025-10-29 15:09:28.095  INFO 10892 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-29 15:09:28.095  INFO 10892 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-29 15:09:28.096  INFO 10892 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
